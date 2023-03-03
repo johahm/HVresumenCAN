@@ -1,29 +1,28 @@
 body {
-    background: #575653;  
+    background: #322d52a9;  
     font-family: "Geneva";
-    margin: 0; /*quitar border blanco de la pagina*/
-    padding: 10px;/*quitar border blanco de la pagina*/
+    margin: auto; /*quitar border blanco de la pagina*/
+    padding:20px;/*quitar border blanco de la pagina*/
+    width: 70%;
 }
 .contenedor {
     background-color: #f0e6e6;
-    height:725px;
-    width: 50%;
+    height:105px;
     margin: auto;
     padding: 0;
 
 }
 .cabecera{
     background: rgba(99, 137, 240, 0.564);
-    text-align: center;
-    height:13%;
-    margin-left: auto;
-    margin-right: auto;
+    height:105px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
 
 }
 .secciones {
   text-align: left;
   color:#010810;
-
 }
 .izquierda{
     height:631px;
@@ -37,22 +36,113 @@ body {
     background-color:#eff1f6;
     width:40%;
 }
-
 h1 {
     column-span:all;
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
     margin: 0;   
+    vertical-align: middle;
 }
 
 h4 {
+    font-size: 11px;
     text-align: center;
     font-style: italic;
     color: rgb(21, 18, 73);
-    padding: 0;
+    padding:2px;
+}
+
+h5 {
+    text-align: center;
+    color: rgb(21, 18, 73);
+  /*  padding: 0; */
+    font-size: 15px;
+    width: 400px;
+    font-style: italic;
+    color:black ;
+    margin: auto;
+    vertical-align: middle;
 }
 p{
     font-size:13px ;
-    padding: 15px 15px 15px 15px;
-    
+    padding: 20px;   
 }
+
+/*RESONSIVE*/   /*RESONSIVE*/   /*RESONSIVE*/
+
+@media only screen and (min-width:360px) and (max-width:640px){
+    * {
+        box-sizing: border-box;
+      }
+  body {
+      background: #322d52a9;  
+      font-family: "Geneva";
+      margin: auto; /*quitar border blanco de la pagina*/
+      padding: 3px;/*quitar border blanco de la pagina*/
+      width: 85%;
+  }
+  .contenedor {
+      background-color: #f0e6e6;
+      height:105px;
+      margin: auto;
+      padding: 0;
+  
+  }
+  .cabecera{
+      background: rgba(99, 137, 240, 0.564);
+      height:105px;
+      display: grid;
+      align-content: center;
+      /*justify-content: center;*/
+      padding: 10px;
+  
+  }
+  .secciones {
+    text-align: left;
+    color:#010810;
+  }
+  .izquierda{
+      height:631px;
+      float:left;
+      background-color:#eff1f6;
+      width:60%;    
+  }
+  .derecha{
+      display: inline-block;
+      height:631px;
+      background-color:#eff1f6;
+      width:40%;
+  }
+  h1 {
+      text-align: center;
+      font-size: 20px;
+      margin: 0;   
+      /*vertical-align: middle;*/
+  }
+  
+  h4 {
+      font-size: 11px;
+      text-align: center;
+      font-style: italic;
+      color: rgb(21, 18, 73);
+      padding:2px;
+  }
+  
+  h5 {
+      text-align: center;
+      color: rgb(21, 18, 73);
+      font-size: 6px;
+      width: 110px;
+      font-style: italic;
+      color:black ;
+      margin: auto;
+      vertical-align: middle;
+  }
+  p{
+      font-size: 9px;
+      padding: 9px;
+      margin: 0;
+  }
+  
+}
+   
